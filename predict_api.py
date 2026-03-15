@@ -8,7 +8,9 @@ app = FastAPI()
 # allow frontend on Vite dev server to call this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173"],
+    # In production you can restrict this to your Vercel domain,
+    # but for now allow all so the UI definitely reaches the API.
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
