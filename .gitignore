@@ -8,7 +8,7 @@ __pycache__/
 *.pyc
 
 # Local data / models
-baldness_model.pkl
+
 cleaned_hair_loss_dataset.csv
 
 # Misc
